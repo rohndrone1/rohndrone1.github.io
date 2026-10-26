@@ -1,11 +1,50 @@
 <!doctype html>
 <html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="robots" content="noindex, nofollow, noarchive, nosnippet, noimageindex"><meta name="googlebot" content="noindex, nofollow, noarchive, nosnippet, noimageindex"><meta name="bingbot" content="noindex, nofollow, noarchive, nosnippet"><meta name="theme-color" content="#f7f5ee"><meta name="description" content="ContextCue is a student project exploring memory and conversation assistance for people living with Alzheimer’s."><title>ContextCue — Memory and conversation assistance</title><link rel="icon" href="assets/mark.svg" type="image/svg+xml"><link rel="stylesheet" href="style.css"></head>
-<body><a class="skip" href="#main">Skip to content</a><header class="header wrap"><a class="brand" href="#" aria-label="ContextCue home"><img src="assets/mark.svg" width="30" height="30" alt="">ContextCue</a><nav aria-label="Main navigation"><a href="#examples">Examples</a><a href="#how-it-works">How it works</a><a href="#support">Support</a><a href="mailto:rohndrone1@gmail.com?subject=ContextCue%20demo%20request" class="nav-contact">Get in touch <span aria-hidden="true">↗</span></a></nav></header>
+<body><a class="skip" href="#main">Skip to content</a><header class="header wrap"><a class="brand" href="#" aria-label="ContextCue home"><img src="assets/mark.svg" width="30" height="30" alt="">ContextCue</a><nav aria-label="Main navigation"><a href="#examples">Examples</a><a href="#how-it-works">How it works</a><a href="#get-help">Get help</a><a href="mailto:rohndrone1@gmail.com?subject=ContextCue%20demo%20request" class="nav-contact">Get in touch <span aria-hidden="true">↗</span></a></nav></header>
 <main id="main"><section class="hero wrap"><div class="hero-copy"><p class="eyebrow"><span class="dot"></span> Research prototype</p><h1>Support for conversations<br>and daily routines.</h1><p class="intro">ContextCue helps people living with Alzheimer’s remember conversations, recognize familiar people and keep track of daily routines.</p><p class="sub">A simple phone interface, with memory and processing running locally.</p><div class="actions"><a class="button" href="#examples">Explore the screens <span aria-hidden="true">↘</span></a><a class="text-link" href="mailto:rohndrone1@gmail.com?subject=ContextCue%20demo%20request">Request a working demo <span aria-hidden="true">↗</span></a></div></div>
 <div class="example" id="examples"><div class="phone" aria-label="Example ContextCue screen"><div class="island" aria-hidden="true"></div><div class="phone-head"><b>ContextCue</b><span>Monday<br><span id="clock">2:05 PM</span></span></div><section class="cue" aria-live="polite"><p id="cue-label">Something you could ask</p><h2 id="cue-title">How is Kim’s arm?</h2><p id="cue-detail">Yesterday, she told you about a dog bite.</p><div class="screen-control" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M4 9v6h4l5 4V5L8 9H4Z"/><path d="M16 8a6 6 0 0 1 0 8m3-11a10 10 0 0 1 0 14"/></svg>Hear again</div></section><div class="screen-ask" aria-hidden="true">Ask a question<small>Tap, then speak.</small></div><div class="phone-footer"><span>Quiet</span><span>Sound is on</span></div></div><div class="example-switch" role="group" aria-label="Choose an example screen"><button data-screen="conversation" aria-pressed="true">Conversation</button><button data-screen="person" aria-pressed="false">Person</button><button data-screen="routine" aria-pressed="false">Routine</button></div><p class="example-note">Example screens · fictional demonstration content</p></div></section>
 
 
 <section class="architecture wrap" id="how-it-works"><p class="eyebrow">HOW IT WORKS</p><div class="section-head"><h2>Memory with a source.</h2><p>The prototype keeps conversation details connected to the person, time and words they came from.</p></div><ol class="flow"><li><span>01</span><h3>Capture & identify</h3><p>Transcribe speech and match enrolled faces and voices.</p></li><li><span>02</span><h3>Store the context</h3><p>Keep facts, plans and task reports with their sources.</p></li><li><span>03</span><h3>Retrieve & update</h3><p>Find relevant details and update resolved follow-ups.</p></li><li><span>04</span><h3>Offer a short cue</h3><p>Show or speak a reminder without a long explanation.</p></li></ol><div class="stack"><span>Python / FastAPI</span><span>JavaScript</span><span>SQLite</span><span>Whisper</span><span>Resemblyzer</span><span>YuNet + SFace</span><span>Gemma 4 12B / Ollama</span></div><details><summary>What is available in the current prototype?</summary><p>The local prototype includes enrolled face and voice matching, transcription, evidence-linked conversation memory, questions and answers, follow-up suggestions, routine completion reports, and a care request that appears on an open family screen. The browser interface connects to a Python backend on a Mac.</p><p>The example screens on this page illustrate fictional use cases. A guided demonstration of the local backend is available on request. Continuous all-day operation and clinical benefits have not been established.</p></details><details><summary>How are memory and uncertainty handled?</summary><p>A plan is stored separately from a reported completion. New information can close a resolved follow-up. The backend checks supporting source references, and uncertain speaker matches are excluded from attributed memory. These checks reduce errors; real-world evaluation is still needed.</p></details></section>
 <section class="support-section" id="support"><div class="wrap support-grid"><div><p class="eyebrow">COMMUNITY SUPPORT</p><h2>Connecting families<br>with more help.</h2><p>When a wearer asks for someone, ContextCue puts a request on an open family screen so a person can check in. If the family needs ongoing help, ACL’s Eldercare Locator can connect them with local aging services. ContextCue could also be offered through aging-service organizations in the future.</p></div><div class="resource"><span class="resource-label">AN OFFICIAL FEDERAL RESOURCE</span><h3>ACL’s Eldercare Locator</h3><p>Find local services such as transportation, meals, home care and caregiver support.</p><a href="https://eldercare.acl.gov/" class="text-link">Find local support <span aria-hidden="true">↗</span></a><small>ContextCue is an independent research prototype. Proposed agency distribution is not an existing partnership or endorsement.</small></div></div></section>
+<section class="help-flow wrap" id="get-help" aria-labelledby="help-flow-title">
+  <p class="eyebrow">GETTING HELP</p>
+  <h2 id="help-flow-title">A request a person can see.</h2>
+  <p class="help-flow-intro">The wearer has a simple way to ask for help. A family member or helper can then check in, while both screens offer a path to local services for ongoing support.</p>
+  <div class="help-steps">
+    <article class="help-step">
+      <span class="step-number">01 / WEARER</span>
+      <div class="mini-screen wearer-screen" aria-label="Example Get Help screen">
+        <span class="mini-brand">ContextCue</span>
+        <h3>Get help</h3>
+        <div class="mini-button">I need someone</div>
+        <p>Your request is waiting for your helper. They need to open their screen to see it.</p>
+        <div class="mini-link">Call Eldercare Locator<br><small>800-677-1116</small></div>
+      </div>
+      <p>They tap “I need someone” or ask aloud. The Get Help screen also gives them a direct way to call ACL’s Eldercare Locator.</p>
+    </article>
+    <article class="help-step">
+      <span class="step-number">02 / FAMILY OR HELPER</span>
+      <div class="mini-screen family-screen" aria-label="Example family alert screen">
+        <span class="mini-brand">FAMILY SCREEN</span>
+        <h3>Someone asked for help</h3>
+        <p>A person should check on the wearer now.</p>
+        <div class="mini-button">I saw this request</div>
+      </div>
+      <p>The request appears on an open family screen and stays there until someone acknowledges it. The helper still needs to check on the wearer.</p>
+    </article>
+    <article class="help-step">
+      <span class="step-number">03 / LOCAL SERVICES</span>
+      <div class="mini-screen services-screen" aria-label="Eldercare Locator service options">
+        <span class="mini-brand">ACL ELDERCARE LOCATOR</span>
+        <h3>Find local support</h3>
+        <p>Home care · transportation · meals · caregiver support</p>
+        <a class="mini-button" href="https://eldercare.acl.gov/home" target="_blank" rel="noopener noreferrer">Open Eldercare Locator ↗</a>
+      </div>
+      <p>Either person can use the official Locator to find ongoing support. ContextCue does not send requests to ACL or emergency responders.</p>
+    </article>
+  </div>
+  <p class="help-flow-note">This prototype shows requests only on an open family screen. It does not send a phone notification. In immediate danger, call 911.</p>
+</section>
 <section class="contact wrap" id="contact"><p class="eyebrow">TAKE A CLOSER LOOK</p><h2>Interested in a working demo?</h2><p>Request a guided walkthrough of the local prototype, the memory workflow and the technical architecture.</p><a class="button" href="mailto:rohndrone1@gmail.com?subject=ContextCue%20demo%20request">Request a demo <span aria-hidden="true">↗</span></a><a class="email" href="mailto:rohndrone1@gmail.com">rohndrone1@gmail.com</a></section></main>
 <footer class="wrap footer"><a class="brand" href="#"><img src="assets/mark.svg" width="24" height="24" alt="">ContextCue</a><p>Memory and conversation assistance</p><p>A research prototype, not a medical device.</p></footer><script src="script.js"></script></body></html>
