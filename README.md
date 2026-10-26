@@ -2,11 +2,15 @@
 
 A minimal static website introducing the ContextCue research prototype.
 
+Website: https://rohndrone1.github.io/contextcue/
+
+The root address redirects to /contextcue/.
+
 The page contains fictional example screens, a technical architecture overview, an official ACL resource link and a demo-request email. No videos, personal biography, patient data, model weights or backend databases are included.
 
 ## GitHub Pages
 
-The `docs/` directory is the public site. Configure GitHub Pages to publish the main branch, /docs folder. The repository uses the account’s root GitHub Pages address so docs/robots.txt is served at /robots.txt. The application source can be added separately later.
+The `docs/` directory is the public site, with the project page in `docs/contextcue/`. Configure GitHub Pages to publish the main branch, /docs folder. The repository uses the account’s root GitHub Pages address so docs/robots.txt is served at /robots.txt. The application source can be added separately later.
 
 ## Crawler directives
 
