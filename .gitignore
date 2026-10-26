@@ -1,0 +1,8 @@
+/dist/
+/desktop-preview.png
+/mobile-preview.png
+/scenario-preview.jpg
+/scenario-label.png
+/preview_server.py
+/__pycache__/
+.DS_Store
