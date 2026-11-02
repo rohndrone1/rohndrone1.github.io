@@ -6,7 +6,7 @@ Website: https://rohndrone1.github.io/contextcue/
 
 The root address redirects to /contextcue/.
 
-The page contains fictional example screens, a technical architecture overview, an official ACL resource link and a demo-request email. No videos, personal biography, patient data, model weights or backend databases are included.
+The page contains fictional example screens, a video demonstration, a technical architecture overview, an official ACL resource link and a demo-request email. No patient data, model weights or backend databases are included.
 
 ## GitHub Pages
 
@@ -14,7 +14,7 @@ The `docs/` directory is the public site, with the project page in `docs/context
 
 ## Crawler directives
 
-Every page includes noindex/nofollow/noarchive/nosnippet directives and robots.txt disallows all crawlers. These are voluntary instructions to search engines, not password protection. The public GitHub source repository itself may be discoverable.
+The HTML pages include noindex/nofollow/noarchive/nosnippet directives. The robots.txt file blocks crawling of the video and its poster while allowing crawlers to read the HTML noindex tags. These are voluntary instructions to search engines, not password protection. The site, video file and public GitHub source repository can all be accessed by anyone who discovers their URLs.
 
 ## Preview
 

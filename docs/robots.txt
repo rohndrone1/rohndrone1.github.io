@@ -1,2 +1,3 @@
 User-agent: *
-Disallow: /
+Disallow: /contextcue/assets/ContextCue-demo-v6.mp4
+Disallow: /contextcue/assets/demo-poster.jpg
